@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       int area;
+        Scanner sc = new Scanner(System.in);
+        int Shorter = sc.nextInt();
+        int Longer  = sc.nextInt();
+        int Height  = sc.nextInt();
+        
+        area = (Height*(Shorter+Longer))/2;
+        System.out.println(area);
+    }}
+
+
