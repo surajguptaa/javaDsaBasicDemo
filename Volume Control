@@ -1,0 +1,39 @@
+/*
+Ramu is watching TV. The current volume of the TV is XXX. 
+Pressing the volume up button of the TV remote increases the volume by 111 while pressing the volume down button decreases the volume by 111. 
+Ramu wants to change the volume from XXX to YYY. 
+Find the minimum number of button presses required to do so.
+
+Input Format:
+
+    The first line contains a single integer TTT - the number of test cases. Then the test cases follow.
+    The first and only line of each test case contains two integers XXX and YYY - the initial volume and final volume of the TV.
+
+Output Format:
+
+For each test case, output the minimum number of times Ramu has to press a button to change the volume from XXX to YYY.
+
+*/
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Main{
+	public static void main (String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int T = sc.nextInt();
+	for(int i=0;i<T;i++){
+	    int X = sc.nextInt();
+	    int Y = sc.nextInt();
+	    if(X>Y){
+	        System.out.println(X-Y);
+	    }
+	    else{
+	        System.out.println(Y-X);
+	    }
+	}	
+	}
+}
